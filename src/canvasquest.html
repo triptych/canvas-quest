@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>{Canvas Quest 2} - v 2.0 Dec 14, 2010</title>
+        <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.2.0/build/cssreset/reset-min.css">
+        <link href='http://fonts.googleapis.com/css?family=UnifrakturMaguntia' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="awesome-buttons.css" />
+
+        <link rel="stylesheet" href="canvasquest.css"/>
+        <script type="text/javascript" charset="utf-8" src="http://yui.yahooapis.com/3.2.0/build/yui/yui-min.js">
+        </script>
+        <script src="canvasquest.js"></script>
+        <!-- <script src="level_001.js"></script> -->
+    </head>
+    <body>
+      <div class="mod">
+        <div class="hd">
+          
+          
+          </div>
+          <div class="bd sliding">
+            <ul>
+              <li class="panel xhide" id="splash">
+                <h1 class="colorcycle">Canvas Quest</h1>
+                <h2>Created by Andrew Wooldridge</h2>
+                <div class="menu">
+                  <a class="awesome huge drkblue button" id="startgame">Start</a>
+                </div>
+              </li>
+              <li class="panel hide loading" id="stage">
+                <div class="stagetitle"><em>StageTitle</em></div>           
+                <canvas id="screen" height="400" width="320">
+                  You need a browser that supports canvas to play this.
+                </canvas>
+              </li>
+              <li class="panel hide" id="info">
+                <div class="infotext">
+                  <p>
+                    Welcome to Canvas Quest! It looks like this is the first time you have
+                    visited here, so let's cover some basics. 
+                  </p>
+                  <p>
+                    <em>Controls</em>
+                    Arrow keys to move around. Hit "esc" key to bring up load/save dialog. 
+                    Hit "spacebar" to reload the game (equivalent to a browser reload).
+                  </p>
+                  <p>
+                    <em>Story</em>
+                    Your name is Foobar the Bazbarian. The young Princess Wynn has fallen ill 
+                    with a mysterious disease. You have been chosen by your kingdom to travel to 
+                    the Dungeon of Doom to retrieve the Magic Canvas. The Magic Canvas has the 
+                    amazing ability to bring to reality whatever is painted on it. The King has
+                    found the world's greatest artist - Leonardo - to paint the Princess Wynn in 
+                    complete health. Your job is to brave the defenses of the Dungeon of Doom 
+                    and return the Canvas back to the King. 
+                  </p>
+                  <p>
+                    <em>GamePlay</em>
+                    You must brave deeper and deeper levels, fight monsters, solve puzzles, and 
+                    eventually win the day. This game is turn based, so nothing will happen until 
+                    you move. Also note that there is a Score counter that goes down for every move
+                    you make - so try to make every move count! To fight a monster, just run into it.
+                    You will find gold, food, and occasionally a trader who can help you on your journey.
+                    Good luck!
+                  </p>
+                </div>
+                <div class="actions">
+                  <a class="awesome huge green button" id="begingame">Begin</a>
+                </div>  
+                
+              </li>
+              <li class="panel hide" id="saveload">
+                <p>Continue or Start Anew your Quest!</p>
+                <div class="actions">
+                  <div><a class="awesome huge blue button" id="newgame">New</a></div>
+                  <div><a class="awesome huge orange button" id="loadgame">Load</a></div>
+                  <div><a class="awesome huge red button" id="savegame">Save</a></div>
+                  <div><a class="awesome huge purple button" id="quitgame">Quit</a></div>
+                </div>
+              
+              </li>
+              <li class="panel hide" id="storyline">
+                <div><img src="" class="storychar"/></div>
+                <div class="storywords"></div>
+                <div class="actions">
+                <a class="awesome huge purple button" id="storylinedone">Done</a>
+                </div>
+              </li>
+              <li class="panel hide" id="yerded">
+                <p>You have died.</p>
+                <div class="actions">
+                  <a class="awesome huge red button" id="backtostart">Back to Start</a>
+                </div>
+              </li>
+              <li class="panel hide" id="store">
+                  <p>Ye Olde Magik Store</p>
+                  <div>Your gold: <span id="storegold"></span>.</div>
+                  <div>Your health: <span id="storehealth"></span>.</div>
+                  <div>Storekeeper says: "<span id="storekeeper"></span>."</div>
+                  <ul>
+                    <li><a href="" class="awesome large blue button" id="add10">10 health - 200 gold</a></li>
+                    <li><a href="" class="awesome large blue button" id="add50">50 health - 300 gold</a></li>
+                    <li><a href="" class="awesome large blue button" id="add100">100 health - 500 gold</a></li> 
+                    <li><a class="awesome huge green button" id="shoppingdone">Done</a></li>
+                  </ul>
+                  
+              </li>
+              
+            </ul>
+ 
+          </div>
+          <div class="ft">
+            
+                <div id="imgstore">
+                    <img id="logo" src="imgs/logo2.png" />
+                    <img id="uniques" src="imgs/dg_uniques32.png" />
+                    <img id="dungeon" src="imgs/dg_dungeon32.png" />
+                    <img id="features" src="imgs/dg_features.png" />
+                    <img id="misc" src="imgs/dg_misc.png" />
+                    <img id="food" src="imgs/dg_food32.png" />
+                    <!-- new additions jan 2 -->
+                    <img id="edging2" src="imgs/dg_edging232.png" />
+                    <img id="edging1" src="imgs/dg_edging132.png" />
+                    <img id="monster1" src="imgs/dg_monster132.png"/>
+                    <img id="monster2" src="imgs/dg_monster232.png"/>
+                    <img id="monster3" src="imgs/dg_monster332.png"/>
+                    <img id="monster4" src="imgs/dg_monster432.png"/>
+                    <img id="monster5" src="imgs/dg_monster532.png"/>
+                    <img id="monster6" src="imgs/dg_monster632.png"/>
+                    <img id="monster7" src="imgs/dg_monster732.png"/>
+                    <img id="grounds3" src="imgs/dg_grounds32.gif" />
+                    <img id="townactions" src="imgs/townactions.png" />
+                    <img id="extra1" src="imgs/dg_extra132.gif" />
+                    
+                    
+                </div>
+            
+            
+          </div>
+      </div>
+
+    </body>
+</html>

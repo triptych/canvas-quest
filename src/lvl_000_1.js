@@ -1,0 +1,13 @@
+lvlFiles[lvlFiles.length] = {
+ name: "0-2: The Forest",
+ keys:{"dungeon_85":{"name":"dungeon_85","type":"dungeon","x":128,"y":288,"collision":true},"dungeon_72":{"name":"dungeon_72","type":"dungeon","x":0,"y":256,"collision":false},"dungeon_86":{"name":"dungeon_86","type":"dungeon","x":160,"y":288,"collision":true},"dungeon_87":{"name":"dungeon_87","type":"dungeon","x":192,"y":288,"collision":true},"dungeon_67":{"name":"dungeon_67","type":"dungeon","x":128,"y":224,"collision":false}},
+ map:["dungeon_85,dungeon_85,dungeon_85,dungeon_85,dungeon_85,dungeon_85,dungeon_85,dungeon_85,dungeon_85,dungeon_85","dungeon_85,dungeon_72,dungeon_72,dungeon_72,dungeon_72,dungeon_72,dungeon_86,dungeon_72,dungeon_72,dungeon_85","dungeon_85,dungeon_72,dungeon_72,dungeon_72,dungeon_85,dungeon_72,dungeon_72,dungeon_72,dungeon_72,dungeon_85","dungeon_85,dungeon_72,dungeon_72,dungeon_72,dungeon_72,dungeon_72,dungeon_72,dungeon_72,dungeon_87,dungeon_85","dungeon_85,dungeon_72,dungeon_72,dungeon_72,dungeon_72,dungeon_72,dungeon_72,dungeon_72,dungeon_67,dungeon_85","dungeon_85,dungeon_72,dungeon_72,dungeon_72,dungeon_72,dungeon_72,dungeon_72,dungeon_72,dungeon_85,dungeon_85","dungeon_85,dungeon_72,dungeon_87,dungeon_72,dungeon_86,dungeon_85,dungeon_72,dungeon_72,dungeon_72,dungeon_85","dungeon_85,dungeon_72,dungeon_85,dungeon_72,dungeon_72,dungeon_72,dungeon_72,dungeon_72,dungeon_72,dungeon_85","dungeon_85,dungeon_72,dungeon_86,dungeon_72,dungeon_85,dungeon_72,dungeon_72,dungeon_86,dungeon_72,dungeon_85","dungeon_85,dungeon_85,dungeon_85,dungeon_85,dungeon_85,dungeon_85,dungeon_85,dungeon_85,dungeon_85,dungeon_85"],
+ monsters: [{"type":"uniques","x":224,"y":64,"pos":{"x":7,"y":1},"role":"monster","health":11},{"type":"uniques","x":224,"y":64,"pos":{"x":8,"y":1},"role":"monster","health":12},{"type":"uniques","x":224,"y":64,"pos":{"x":8,"y":2},"role":"monster","health":13},{"type":"uniques","x":224,"y":64,"pos":{"x":8,"y":8},"role":"monster","health":12}],
+ events: [
+ {"action":"food","pos":{"x":7,"y":4},"msg":"mushrooms!","tomap":""},
+ {"action":"food","pos":{"x":6,"y":5},"msg":"mushrooms!","tomap":""},
+ {"action":"newlevel", "pos": {x: 8, y: 4}, tomap:"lvl_001_1.js"}
+ ],
+ items: [{"type":"food","x":64,"y":64,"pos":{"x":7,"y":4},"role":"treasure","gold":1,"health":1},{"type":"food","x":64,"y":64,"pos":{"x":6,"y":5},"role":"treasure","gold":1,"health":1}],
+ character: {"x":0,"y":0,"type":"uniques","pos":{"x":3,"y":3},"role":"character","health":100,"score":1000000} 
+}; /*end of level*/

@@ -1,0 +1,303 @@
+/** styles for canvasquest 2 **/
+
+canvas {
+    
+    
+}
+
+html,body {
+    
+    padding:0px;
+    margin: 0px;
+    text-align:center;
+    background-color: #FFFFFF;
+    height: 100%;
+    width: 100%;
+  }  
+
+.mod {
+  xbackground-image: url("imgs/canvasqbg.gif");
+  background-repeat: repeat-x;
+  padding: 16px;
+  xheight: 100%;
+  xwidth: 100%;
+}
+
+@font-face {  
+  font-family: prstartk ;  
+  src: url( fonts/prstartk.ttf ) format("truetype");  
+}  
+
+h1 {
+  font-family: prstartk;
+  color:#3399CC;
+  text-shadow: 1px 1px #FFFFFF;
+  font-size: 2em;
+  padding-top: 100px;
+  
+}
+
+h2 {
+  font-size: .4em;
+  font-family: Verdana, Arial, sans-serif;
+  color: #FFF;
+}
+
+#imgstore{
+  display: none;
+}
+
+#screen {
+
+}
+
+.bd {
+  height: 400px;
+  width: 320px;
+  margin: 0px auto;
+   overflow: hidden;
+   background-color: #000000;
+   background-image: url("imgs/beachy/beachy.gif");
+   border: 1px solid #1f1f1f;
+     -moz-box-shadow: 2px 2px 3px #000;
+  -webkit-box-shadow: 2px 2px 3px #000;
+  
+  
+}
+.bd ul {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  height: 400px;
+  width: 320px;
+
+   
+ 
+
+}
+
+.bd ul .panel {
+  position: absolute;
+  top:0px;
+  left: 0px;
+  height: 400px;
+  width: 320px;
+  overflow: hidden;
+}
+
+.bd ul li.hide{
+  left: -400px;
+  top: 0px;
+}
+
+
+#splash .menu {
+  padding-top: 100px;
+  text-align: center;
+}
+
+#splash {
+  xpadding-top: 100px;
+  background: url("imgs/indian-summer/indian-summer.gif"); 
+  font-family: Verdana, Arial, sans-serif;
+}
+
+.poptxt {
+  text-shadow: 2px 2px 2px black;
+  font-size: .6em;
+  color: red;
+  font-family: prstartk;
+
+}
+
+#info, #saveload, #yerded, #storyline, #store {
+  background-color: rgba(0,0,085, .8);
+  font-size: 1em;
+  font-family: Verdana, Arial,sans-serfi;
+  color: #FFF;
+  text-shadow: 2px 2px 2px #000;
+}
+#store p {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+#store ul {
+  padding-top: 24px;
+}
+
+#storyline .storywords {
+  height: 50%;
+  overflow: auto;
+}
+
+#storyline .storychar {
+  display: none;
+}
+
+#yerded p {
+ height: 50%;
+ padding: 10px;
+}
+
+#info .infotext, #saveload p {
+  padding-top: 20px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+#info .infotext {
+  height: 300px;
+  width: 300px;
+  overflow: auto;
+  text-align: left;
+}
+
+#info .infotext em {
+  font-weight: bold;
+  color: tan;
+  display: block;
+  }
+  
+#info .infotext p {
+  padding-bottom: 4px;
+  border-bottom: 2px solid #333333;
+}  
+
+#saveload .actions div {
+  padding: 4px;
+}
+
+#stage .stagetitle{
+  display: none;
+}
+
+#stage.loading .stagetitle{
+  background-color: rgba(0,0,0,.5);
+  font-family: Verdana, Arial, sans-serif;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 320px;
+  height: 400px;
+  display: block;
+}
+
+#stage.loading .stagetitle em {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  xleft: 400px;
+
+  color: #008000;
+  font-size: 1.1em;
+  text-shadow: -1px -1px 1px #FFF, 1px 1px 1px #000;
+}
+
+/** webkit animations **/
+
+.sliding {
+ -webkit-animation-name: "bgslide";
+ -webkit-animation-duration: 300s;
+ -webkit-animation-iteration-count: infinite;
+    
+}
+
+@-webkit-keyframes bgslide {
+ from {
+    background-position: 0px 0px;
+    -webkit-animation-timing-function: linear;
+    }
+    
+    25% {
+    background-position: -1000px 1000px;
+    -webkit-animation-timing-function: linear;
+   }
+
+    50% {
+    background-position: 0px 0px;
+    -webkit-animation-timing-function: linear;
+       }
+    75% {
+        background-position: 1000px -1000px;
+    -webkit-animation-timing-function: linear;
+    }
+  to {
+   background-position: 0px 0px;
+    -webkit-animation-timing-function: linear;
+    } 
+}
+
+
+.hovering {
+   -webkit-animation-name: 'wiggle';
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;   
+    
+   
+}
+
+.throbbing {
+     -webkit-animation-name: 'throb';
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out; 
+}
+
+@-webkit-keyframes wiggle {
+    from {
+        -webkit-transform: rotate(0deg) ;
+    }
+    33%{
+        -webkit-transform: rotate(10deg) ;
+    }
+66% {
+    -webkit-transform: rotate(-10deg) ;
+}
+to {
+    -webkit-transform: rotate(0deg) ;
+}
+    
+
+}
+
+@-webkit-keyframes throb {
+    from{
+        -webkit-transform:  scale(1);
+    }
+33% {-webkit-transform:  scale(1.2);}
+66% {-webkit-transform:  scale(1.2);}
+
+to {
+    -webkit-transform:  scale(1);
+}
+    
+
+}
+
+
+.colorcycle {
+    -webkit-animation-name: 'colorcycle';
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+}
+
+
+@-webkit-keyframes colorcycle {
+    0%  { color: red;}
+    20% { color: green;}
+    40% { color: orange;}
+    60% { color: purple;}
+    80% { color: yellow;}
+    100% { color: blue; }
+
+}
+
+
+
+
+
