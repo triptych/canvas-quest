@@ -4,7 +4,7 @@
 	"version":"2.1",
 	"app":{
 		"urls": [
-			"*://whisperstorm.com/canvasquest2chrome/"
+			"http://whisperstorm.com/canvasquest2chrome/"
 		],
 		"launch":{
 			"web_url": "http://whisperstorm.com/canvasquest2chrome/canvasquest.html"
