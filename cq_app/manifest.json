@@ -1,0 +1,19 @@
+{
+	"name": "Canvas Quest",
+	"description": "A canvas-based RPG",
+	"version":"2.1",
+	"app":{
+		"urls": [
+			"*://whisperstorm.com/canvasquest2chrome/"
+		],
+		"launch":{
+			"web_url": "http://whisperstorm.com/canvasquest2chrome/canvasquest.html"
+		}
+	},
+	"icons": {
+		"128": "128.png"
+	},
+	"permissions": [
+		"unlimitedStorage"
+	]
+}

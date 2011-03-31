@@ -193,6 +193,11 @@ h2 {
   text-shadow: -1px -1px 1px #FFF, 1px 1px 1px #000;
 }
 
+.mod .ft #adsense{
+	position: relative;
+	top: 10px;
+}
+
 /** webkit animations **/
 
 .sliding {
