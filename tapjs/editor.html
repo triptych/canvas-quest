@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://yui.yahooapis.com/3.2.0/build/yui/yui-min.js"></script>
+
+    <title>CanvasQuest Editor v 0.01 Dec 21, 2010</title>
+    <link rel="stylesheet" type="text/css" 
+    href="http://yui.yahooapis.com/combo?3.2.0/build/cssfonts/fonts-min.css&3.2.0/build/cssreset/reset-min.css&3.2.0/build/cssgrids/grids-min.css&3.2.0/build/cssbase/base-min.css">
+<link rel="stylesheet" href="editor.css" type="text/css">
+  <script src="editor.js"></script>
+  </head>
+  <body class="yui3-skin-sam">
+
+    
+    <div class="yui3-g">
+      <div class="yui3-u-1">
+          <div class="header">
+            <h3>CanvasQuest Editor (The Magic Canvas)</h3>
+            </div>
+            <div class="toolbar">
+              <!--
+              [<a href="" id="tb_save">SAVE</a>]
+              [<a href="" id="tb_load">LOAD</a>]
+              -->
+              [<a href="" id="tb_restart">RESTART</a>]
+            </div> 
+      </div>
+        <div class="yui3-u-1-3">
+          <div class="tools">
+            <h4>tools</h4>
+            <div id="tiles">
+              <label for="set">Set:</label>
+              <select id="set">
+                <option>pick a set</option>
+                <option>dungeon</option>
+                <option>uniques</option>
+                <option>features</option>
+                <option>misc</option>
+                <option>food</option>
+                
+            <option value="edging2">Edging2</option>
+            <option value="edging1">Edging1</option>
+            <option value="monster1">Monster1</option>
+            <option value="monster2">Monster2</option>
+            <option value="monster3">Monster3</option>
+            <option value="monster4">Monster4</option>
+            <option value="monster5">Monster5</option>
+            <option value="monster6">Monster6</option>
+            <option value="monster7">Monster7</option>
+            <option value="grounds3">Grounds3</option>
+            <option value="townactions">Town Actions</option>
+            <option value="extra1">Extra1</option>
+              </select>
+              <div id="tileitems"></div>
+              
+            </div>
+            <div id="selInfo">
+              <div id="seltile"></div>
+              <div id="selsettings">
+                <label>Collision: <input type="checkbox" id="selcollision"/></label>
+              </div>
+            </div>
+            
+            
+          </div>
+        </div>
+        <div class="yui3-u-2-3">
+          <h4>view</h4>
+          
+          <div id="tabview">
+            <ul>
+              <li><a href="#grid">Grid</a></li>
+              <li><a href="#monsters">Monsters</a></li>
+              <li><a href="#items">Items</a></li>
+              <li><a href="#events">Events</a></li>
+            </ul>
+            
+          
+          <div>
+            <div id="grid">Grid</div>
+            <div id="monsters"> Monsters </div>
+            <div id="items"> Items </div>
+            <div id="events"> Events </div>
+          </div>
+        </div>
+          
+        </div>
+    </div>
+    <div id="output">
+      <h4>output</h4>
+      <textarea rows="20" cols="80" id="outputcode">
+        Choose a tileset from the dropdown list, then click on a tile. 
+        Click on the grid to place tiles. Check the collision box to make the tile a wall.
+        Placing monsters work via the Monster tab. If you want to make a treasure item, you have to place both a Treasure Item, and
+        a treasure Event on the same grid element. Look at existing levels for an example.
+        Copy paste the code you create here and save to a js file somewhere on the net. To load your level, start a game, get
+        to the tiles view, then press "l" or "L" (depends on the browser), then type the full URL of the level you created.
+        Good luck creating new adventures!
+      </textarea>
+    </div>
+    <div id="evtoverlay">
+      
+      <div class="yui3-widget-hd">Event Properties <a href="#" id="hideoverlay">[x]</a></div>
+      <div class="yui3-widget-bd">
+        <label>Event Type:</label>
+        <select id="evttype">
+            <option value="msg">Message</option>
+            <option value="treasure">Treasure</option>
+            <option value="newlevel">New Level</option>
+            <option value="food">Food</option>
+            <option value="storyline">Storyline</option>
+            <option value="store">Store</option>
+            
+
+         </select>
+         <div><label>msg:</label><input type="text" id="evtmsg"></input></div>
+         <div><label>tomap:</label><input type="text" id="evttomap"></input></div>
+         <div><button id="saveevt">Save</button></div>
+          
+      </div>
+      <div class="yui3-widget-ft">Pos: x:<span id="evtposx">x</span>,y:<span id="evtposy">y</span></div>
+
+    </div>
+    
+  </body>
+</html>

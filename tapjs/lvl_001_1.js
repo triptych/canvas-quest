@@ -1,0 +1,13 @@
+lvlFiles[lvlFiles.length] = {
+ name: "1-1: The Dungeon of Doom",
+ keys:{"dungeon_37":{"name":"dungeon_37","type":"dungeon","x":32,"y":128,"collision":true},"extra1_38":{"name":"extra1_38","type":"extra1","x":64,"y":128,"collision":true},"extra1_143":{"name":"extra1_143","type":"extra1","x":256,"y":480,"collision":false},"dungeon_78":{"name":"dungeon_78","type":"dungeon","x":192,"y":256,"collision":false},"dungeon_69":{"name":"dungeon_69","type":"dungeon","x":192,"y":224,"collision":true},"extra1_23":{"name":"extra1_23","type":"extra1","x":160,"y":64,"collision":true}},
+ map:["dungeon_37,extra1_38,extra1_38,extra1_38,extra1_38,extra1_38,extra1_38,extra1_38,extra1_38,dungeon_37",
+ "dungeon_37,extra1_143,dungeon_78,dungeon_78,dungeon_78,dungeon_78,dungeon_78,dungeon_78,dungeon_78,dungeon_37","dungeon_37,dungeon_78,dungeon_78,dungeon_78,dungeon_78,dungeon_78,dungeon_78,dungeon_78,dungeon_78,dungeon_37","dungeon_37,dungeon_78,dungeon_78,dungeon_37,dungeon_78,dungeon_78,dungeon_37,dungeon_78,dungeon_78,dungeon_69","dungeon_37,dungeon_78,dungeon_78,dungeon_37,dungeon_78,dungeon_78,dungeon_37,dungeon_78,dungeon_78,dungeon_37","dungeon_37,dungeon_78,dungeon_78,dungeon_37,dungeon_78,dungeon_78,dungeon_37,dungeon_78,dungeon_78,dungeon_37","dungeon_37,dungeon_78,dungeon_78,dungeon_37,dungeon_78,dungeon_78,dungeon_37,dungeon_78,dungeon_78,dungeon_37","dungeon_69,dungeon_78,dungeon_78,dungeon_37,dungeon_78,dungeon_78,dungeon_37,dungeon_78,dungeon_78,dungeon_37","dungeon_37,dungeon_78,dungeon_78,dungeon_37,dungeon_78,dungeon_78,dungeon_37,dungeon_78,dungeon_78,dungeon_37","dungeon_37,dungeon_37,dungeon_37,dungeon_37,dungeon_37,extra1_23,dungeon_37,dungeon_37,dungeon_37,dungeon_37"],
+ 
+ monsters: [{"type":"monster7","x":64,"y":0,"pos":{"x":5,"y":2},"role":"monster","health":10},{"type":"monster7","x":192,"y":64,"pos":{"x":1,"y":8},"role":"monster","health":10},{"type":"monster7","x":192,"y":64,"pos":{"x":2,"y":8},"role":"monster","health":14},{"type":"monster7","x":192,"y":64,"pos":{"x":7,"y":8},"role":"monster","health":10},{"type":"monster7","x":192,"y":64,"pos":{"x":8,"y":8},"role":"monster","health":14}],
+ events: [
+  {"action":"newlevel", "pos": {x: 1, y: 1}, tomap:"lvl_001_2.js"},
+ {"action":"msg","pos":{"x":7,"y":1},"msg":"He's dead Jim","tomap":""},{"action":"treasure","pos":{"x":7,"y":2},"msg":"He's dead Jim","tomap":""}],
+ items: [{"type":"misc","x":160,"y":192,"pos":{"x":7,"y":1},"role":"treasure","gold":100,"health":1},{"type":"misc","x":64,"y":32,"pos":{"x":7,"y":2},"role":"treasure","gold":100,"health":1}],
+ character: {"x":0,"y":0,"type":"uniques","pos":{"x":4,"y":7},"role":"character","health":100,"score":1000000} 
+}; /*end of level*/
